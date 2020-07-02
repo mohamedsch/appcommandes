@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="7dp" android:state_pressed="true"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+
+
+
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+
+        android:background="#eeeeee">
+
+
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+
+            android:onClick="quantite"
+
+            app:srcCompat="@drawable/no"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:background="#eeeeee"
+            android:id="@+id/textC1"
+            android:textColor="@android:color/black"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:text="CCC"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textC3"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textC1"
+
+            android:text=""
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+
+            android:textStyle="bold"
+            ></TextView>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:layout_below="@+id/textC3">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/ll"
+            android:onClick="quantite"
+            tools:context="com.casbah.casbahdzcommandes.MainActivity"
+            android:state_pressed="true">
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|start"
+                android:layout_marginLeft="5dp"
+
+                android:text="CCC"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/infos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="bottom|end"
+                android:onClick="infos"
+                app:srcCompat="@drawable/togg"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CASBAH Commandes</string>
+    <string name="tab_text_1">Faire une commande</string>
+    <string name="permission_text">This app needs access to your camera so that it can take pictures.</string>
+
+    <string name="tab_text_2">Mes commandes</string>
+</resources>

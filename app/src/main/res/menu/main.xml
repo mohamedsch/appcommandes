@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item
+        android:id="@+id/overflowMenu"
+        android:icon="@drawable/menuu"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+    <item
+        android:id="@+id/notifications"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        android:icon="@drawable/notifications"
+
+
+        />
+
+
+    <item
+        android:id="@+id/mdpp"
+        android:orderInCategory="100"
+        android:title="Changer le mot de passe"
+        android:icon="@drawable/pass"
+
+        />
+    <item
+        android:id="@+id/retours"
+        android:orderInCategory="100"
+        android:title="Retours"
+        android:icon="@drawable/retour"
+
+        />
+
+
+    <item
+        android:id="@+id/apropos"
+        android:orderInCategory="100"
+        android:title="A propos"
+        android:icon="@drawable/infos"
+
+        />
+    <item
+        android:id="@+id/dec"
+        android:orderInCategory="100"
+        android:title="Déconnexion"
+        android:icon="@drawable/logout"
+       />
+        </menu>
+    </item>
+</menu>

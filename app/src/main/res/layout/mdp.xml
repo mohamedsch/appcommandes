@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casbah.casbahdzcommandes.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5f27cd">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5f27cd">
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:id="@+id/IDDllla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ancien mot de passe"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="4dp"
+
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mdpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#fff"
+            android:inputType="textPassword"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:id="@+id/IDDlll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nouveau mot de passe"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="4dp"
+        android:layout_below="@+id/IDDllla"
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IDDllla"
+            android:background="#fff"
+            android:inputType="textPassword"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:id="@+id/IDDllll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmer le mot de passe"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:padding="4dp"
+        android:layout_below="@+id/IDDlll"
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mdp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IDDlll"
+            android:background="#fff"
+            android:inputType="textPassword"
+
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+</RelativeLayout>
+    </ScrollView>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+android:id="@+id/add"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom|end"
+android:layout_margin="@dimen/fab_margin"
+app:srcCompat="@drawable/save"
+
+    app:backgroundTint="#75daad"
+
+    tools:ignore="VectorDrawableCompat" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

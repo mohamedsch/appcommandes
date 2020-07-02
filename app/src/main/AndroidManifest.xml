@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.casbah.casbahdzcommandes">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+
+        android:largeHeap="true">
+        <activity
+            android:name="com.casbah.casbahdzcommandes.ui.MainA"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.casbah.casbahdzcommandes"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name="com.casbah.casbahdzcommandes.mod"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.shop"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.cart"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.MainActivity"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.ui.mail"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.profile"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.profilemod"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.mdp"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.apropos"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.retours"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.ajoutretours"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name="com.casbah.casbahdzcommandes.retoursmod"  android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity android:name="com.casbah.casbahdzcommandes.intro"         android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"></activity>
+
+    </application>
+
+</manifest>

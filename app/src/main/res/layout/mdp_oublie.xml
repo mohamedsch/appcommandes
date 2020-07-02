@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5f27cd">
+
+
+
+
+    <EditText
+
+        android:id="@+id/mail"
+        android:inputType="text"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+
+        android:padding="15dp"
+        android:background="@drawable/editbox"
+        android:drawableLeft="@drawable/mail"
+
+        />
+
+
+    <Button
+        android:id="@+id/veri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Envoyer"
+        android:textColor="#000000"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/loginn"
+        android:layout_alignStart="@+id/mail"
+        android:layout_alignEnd="@+id/mail"
+        android:layout_alignLeft="@+id/mail"
+        android:layout_alignRight="@+id/mail" />
+
+
+
+
+</RelativeLayout>
+

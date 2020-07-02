@@ -1,0 +1,259 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.casbah.casbahdzcommandes"
+4    android:versionCode="8"
+5    android:versionName="1.4.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:4:5-77
+11-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:7:5-80
+14-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:7:22-77
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:8:5-78
+15-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:8:22-76
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:9:5-65
+16-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:9:22-62
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:10:5-81
+17-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:11:5-69
+18-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:11:22-66
+19
+20    <uses-feature android:name="android.hardware.camera" />
+20-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:12:5-60
+20-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:12:19-57
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:8:5-78
+22-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:8:22-76
+23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+23-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:7:5-80
+23-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:7:22-77
+24
+25    <uses-feature android:name="android.hardware.camera.autofocus" />
+25-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:15:5-70
+25-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:15:19-67
+26
+27    <application
+27-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:17:5-64:19
+28        android:allowBackup="true"
+28-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:18:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:19:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:21:9-41
+33        android:largeHeap="true"
+33-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:26:9-33
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:20:9-54
+35        android:supportsRtl="true"
+35-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:22:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme"
+37-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:23:9-40
+38        android:usesCleartextTraffic="true" >
+38-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:24:9-44
+39        <activity
+39-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:27:9-37:20
+40            android:name="com.casbah.casbahdzcommandes.ui.MainA"
+40-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:28:13-65
+41            android:label="@string/app_name"
+41-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:29:13-45
+42            android:theme="@style/AppTheme.NoActionBar"
+42-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:30:13-56
+43            android:windowSoftInputMode="stateHidden" >
+43-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:31:13-54
+44            <intent-filter>
+44-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:32:13-36:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:33:17-69
+45-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:33:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:35:17-77
+47-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:35:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+51-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:38:9-46:20
+52            android:name="androidx.core.content.FileProvider"
+52-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:39:13-62
+53            android:authorities="com.casbah.casbahdzcommandes"
+53-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:40:13-63
+54            android:exported="false"
+54-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:41:13-37
+55            android:grantUriPermissions="true" >
+55-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:42:13-47
+56            <meta-data
+56-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:43:13-45:53
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:44:17-67
+58                android:resource="@xml/file_paths" />
+58-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:45:17-51
+59        </provider>
+60
+61        <activity
+61-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:9-165
+62            android:name="com.casbah.casbahdzcommandes.mod"
+62-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:19-66
+63            android:theme="@style/AppTheme.NoActionBar"
+63-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:68-111
+64            android:windowSoftInputMode="stateHidden" />
+64-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:48:112-153
+65        <activity
+65-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:9-166
+66            android:name="com.casbah.casbahdzcommandes.shop"
+66-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:19-67
+67            android:theme="@style/AppTheme.NoActionBar"
+67-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:69-112
+68            android:windowSoftInputMode="stateHidden" />
+68-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:49:113-154
+69        <activity
+69-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:50:9-166
+70            android:name="com.casbah.casbahdzcommandes.cart"
+70-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:50:19-67
+71            android:theme="@style/AppTheme.NoActionBar"
+71-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:50:69-112
+72            android:windowSoftInputMode="stateHidden" />
+72-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:50:113-154
+73        <activity
+73-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:51:9-174
+74            android:name="com.casbah.casbahdzcommandes.MainActivity"
+74-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:51:19-75
+75            android:theme="@style/AppTheme.NoActionBar"
+75-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:51:77-120
+76            android:windowSoftInputMode="stateHidden" />
+76-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:51:121-162
+77        <activity
+77-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:9-169
+78            android:name="com.casbah.casbahdzcommandes.ui.mail"
+78-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:19-70
+79            android:theme="@style/AppTheme.NoActionBar"
+79-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:72-115
+80            android:windowSoftInputMode="stateHidden" />
+80-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:52:116-157
+81        <activity
+81-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:9-169
+82            android:name="com.casbah.casbahdzcommandes.profile"
+82-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:19-70
+83            android:theme="@style/AppTheme.NoActionBar"
+83-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:72-115
+84            android:windowSoftInputMode="stateHidden" />
+84-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:53:116-157
+85        <activity
+85-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:54:9-172
+86            android:name="com.casbah.casbahdzcommandes.profilemod"
+86-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:54:19-73
+87            android:theme="@style/AppTheme.NoActionBar"
+87-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:54:75-118
+88            android:windowSoftInputMode="stateHidden" />
+88-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:54:119-160
+89        <activity
+89-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:55:9-165
+90            android:name="com.casbah.casbahdzcommandes.mdp"
+90-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:55:19-66
+91            android:theme="@style/AppTheme.NoActionBar"
+91-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:55:68-111
+92            android:windowSoftInputMode="stateHidden" />
+92-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:55:112-153
+93        <activity
+93-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:56:9-169
+94            android:name="com.casbah.casbahdzcommandes.apropos"
+94-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:56:19-70
+95            android:theme="@style/AppTheme.NoActionBar"
+95-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:56:72-115
+96            android:windowSoftInputMode="stateHidden" />
+96-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:56:116-157
+97        <activity
+97-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:57:9-169
+98            android:name="com.casbah.casbahdzcommandes.retours"
+98-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:57:19-70
+99            android:theme="@style/AppTheme.NoActionBar"
+99-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:57:72-115
+100            android:windowSoftInputMode="stateHidden" />
+100-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:57:116-157
+101        <activity
+101-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:58:9-174
+102            android:name="com.casbah.casbahdzcommandes.ajoutretours"
+102-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:58:19-75
+103            android:theme="@style/AppTheme.NoActionBar"
+103-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:58:77-120
+104            android:windowSoftInputMode="stateHidden" />
+104-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:58:121-162
+105        <activity
+105-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:59:9-172
+106            android:name="com.casbah.casbahdzcommandes.retoursmod"
+106-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:59:19-73
+107            android:theme="@style/AppTheme.NoActionBar"
+107-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:59:75-118
+108            android:windowSoftInputMode="stateHidden" />
+108-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:59:119-160
+109        <activity
+109-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:61:9-62:110
+110            android:name="com.casbah.casbahdzcommandes.intro"
+110-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:61:19-68
+111            android:launchMode="singleTop"
+111-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:61:77-107
+112            android:theme="@style/AppTheme.NoActionBar"
+112-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:62:13-56
+113            android:windowSoftInputMode="stateHidden" />
+113-->C:\Users\ch_se\AndroidStudioProjects\MyApplication2\app\src\main\AndroidManifest.xml:62:57-98
+114
+115        <provider
+115-->[com.squareup.picasso:picasso:2.71828] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\1710e405470faf5e7d923e00500ee78d\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+116            android:name="com.squareup.picasso.PicassoProvider"
+116-->[com.squareup.picasso:picasso:2.71828] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\1710e405470faf5e7d923e00500ee78d\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+117            android:authorities="com.casbah.casbahdzcommandes.com.squareup.picasso"
+117-->[com.squareup.picasso:picasso:2.71828] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\1710e405470faf5e7d923e00500ee78d\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+118            android:exported="false" />
+118-->[com.squareup.picasso:picasso:2.71828] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\1710e405470faf5e7d923e00500ee78d\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+119
+120        <activity
+120-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\10a42e3aa366812f96d9e2b3245899e6\jetified-play-services-base-11.8.0\AndroidManifest.xml:23:9-26:75
+121            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+121-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\10a42e3aa366812f96d9e2b3245899e6\jetified-play-services-base-11.8.0\AndroidManifest.xml:24:13-79
+122            android:exported="false"
+122-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\10a42e3aa366812f96d9e2b3245899e6\jetified-play-services-base-11.8.0\AndroidManifest.xml:25:13-37
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.google.android.gms:play-services-base:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\10a42e3aa366812f96d9e2b3245899e6\jetified-play-services-base-11.8.0\AndroidManifest.xml:26:13-72
+124
+125        <meta-data
+125-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\2cef7044534eb638fe5a4034bb646316\jetified-play-services-basement-11.8.0\AndroidManifest.xml:23:9-25:69
+126            android:name="com.google.android.gms.version"
+126-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\2cef7044534eb638fe5a4034bb646316\jetified-play-services-basement-11.8.0\AndroidManifest.xml:24:13-58
+127            android:value="@integer/google_play_services_version" />
+127-->[com.google.android.gms:play-services-basement:11.8.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\2cef7044534eb638fe5a4034bb646316\jetified-play-services-basement-11.8.0\AndroidManifest.xml:25:13-66
+128
+129        <provider
+129-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+130            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+130-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+131            android:authorities="com.casbah.casbahdzcommandes.lifecycle-process"
+131-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+132            android:exported="false"
+132-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+133            android:multiprocess="true" />
+133-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\ch_se\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+134    </application>
+135
+136</manifest>

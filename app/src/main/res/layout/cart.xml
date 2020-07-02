@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casbah.casbahdzcommandes.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <ImageButton
+            android:id="@+id/datex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+
+
+            android:src="@drawable/retourr"
+            android:text="" />
+
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:padding="20dp"
+            android:src="@drawable/addd"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/modif"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginRight="91dp"
+
+
+
+            android:padding="20dp"
+            android:src="@drawable/modif"
+            android:text="" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/datex"
+            android:layout_marginBottom="?android:attr/actionBarSize"
+
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:id="@+id/totalp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text=""
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            tools:ignore="VectorDrawableCompat"
+
+            />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+
+
+
+            app:srcCompat="@drawable/shoppp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <TextView
+            android:id="@+id/totalQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text=""
+            android:shadowRadius="10.0"
+            android:textStyle="bold"
+            android:includeFontPadding="false"
+
+            android:background="@drawable/circle"
+            tools:ignore="VectorDrawableCompat"
+
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:padding="33px"
+            android:textColor="#fff"
+            android:text="Sauvegarder"
+            android:textStyle="bold"
+            android:onClick="modif"
+android:background="#75daad"
+            tools:ignore="OnClick,VectorDrawableCompat"
+
+            />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

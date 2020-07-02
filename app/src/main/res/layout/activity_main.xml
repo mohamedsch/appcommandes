@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casbah.casbahdzcommandes.MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?attr/colorPrimary"
+            >
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="35dp"
+                android:id="@+id/tv1"
+                app:strokeWidth="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="0dp"
+                app:strokeColor="#000">
+                <WebView
+                    android:id="@+id/web"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+
+                    ></WebView>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nome"
+                android:textColor="#fff"
+                android:text=""
+                android:textStyle="italic"
+                android:textSize="25sp"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="35dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logooo"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+
+    ></ImageView>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:floating_background_color="#75daad"
+        app:floating_left_icon="@drawable/valider"
+        app:floating_title="Lancer la commande"
+        app:floating_title_color="@android:color/white"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

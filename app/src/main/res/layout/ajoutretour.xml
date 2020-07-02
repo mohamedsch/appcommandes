@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="4dp"
+
+                android:id="@+id/l"
+                android:background="@drawable/editbox"
+
+                android:hint="Produit">
+
+            <AutoCompleteTextView
+                android:id="@+id/produit"
+                android:layout_width="match_parent"
+
+                android:background="@drawable/editbox"
+
+                android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/QF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantité en fardeau"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="4dp"
+                android:layout_below="@+id/l"
+                android:background="@drawable/editbox"
+
+                tools:ignore="MissingConstraints">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l"
+                    android:inputType="number"
+                    android:background="@drawable/editbox"
+
+                    android:id="@+id/quantitef"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/QU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantité en bouteilles"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="4dp"
+                android:layout_below="@+id/QF"
+                android:background="@drawable/editbox"
+
+                tools:ignore="MissingConstraints">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/QF"
+                    android:inputType="number"
+                    android:background="@drawable/editbox"
+
+                    android:id="@+id/quantiteu"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/DESC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="4dp"
+                android:layout_below="@+id/QU"
+                android:background="#fff"
+
+                tools:ignore="MissingConstraints">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:inputType="text|textMultiLine"
+
+
+                    android:gravity="top"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                android:id="@+id/tv1"
+                app:strokeWidth="1dp"
+                android:layout_below="@+id/DESC"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:strokeColor="#000">
+                <ImageView
+                    android:id="@+id/tv"
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+
+                    />
+            </com.google.android.material.card.MaterialCardView>
+            <ImageButton
+                android:layout_below="@+id/DESC"
+
+                android:id="@+id/photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="132dp"
+                android:padding="20dp"
+                android:layout_marginRight="1dp"
+
+
+
+
+                android:src="@drawable/photo"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/gallery"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="162dp"
+                android:padding="20dp"
+                android:layout_marginRight="1dp"
+
+
+                android:layout_below="@+id/DESC"
+
+
+                android:src="@drawable/gallery"
+                android:text="" />
+            <ImageButton
+                android:id="@+id/rotation"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="192dp"
+                android:padding="20dp"
+                android:layout_marginRight="1dp"
+
+
+                android:layout_below="@+id/DESC"
+
+
+                android:src="@drawable/rotation"
+                android:text="" />
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@+id/DESC"
+                tools:context=".MainActivity">
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd"
+              android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/add"
+                tools:ignore="VectorDrawableCompat"
+                />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <TextView
+                android:id="@+id/textC3"
+                android:textColor="@android:color/black"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/photo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Produits"
+
+                android:textSize="25sp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textC3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+
+                android:id="@+id/recycler"
+                android:layout_marginBottom="80dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        app:floating_background_color="#75daad"
+        app:floating_left_icon="@drawable/valider"
+        app:floating_title="Lancer le(s) retour(s)"
+        app:floating_title_color="@android:color/white"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
